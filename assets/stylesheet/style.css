@@ -254,6 +254,12 @@ header{
     border: 1px solid black;
     float: left;
     background-color: lightcyan;
+    text-align: center;
+    line-height: 50px;
+    vertical-align: middle;
+    font-size: 25px;
+    color: grey;
+    
 }
 .col-3{
     border-right: 3px solid black;
@@ -274,8 +280,6 @@ header{
     background-color: khaki;
     padding: 3% 0;
     position: relative;
-     /* z-index:-2;  */
-    
 }
 
 .loop-game {
@@ -284,40 +288,173 @@ header{
 }
 
 .main-box-loop {
-    width: 470px;
-    padding: 10px;
+    width: 490px;
+    height: 490px;
+    padding: 20px;
     position: relative;
+    background-color: blanchedalmond;
+    outline: 5px solid rgb(163, 142, 146);
 
 }
 
-.loop-dots {
-    background-color : black;
-    height: 430px;
-    width: 430px;
-    position: absolute;
-    top:20px;
-    left: 20px;
-    box-shadow: 0 0 0 11px grey;
-    
+.loop-row {
+    position: relative;
 }
-
 .loop-game .col-1-9 {
-
 background-color: blanchedalmond;
 width: 50px;
 height: 50px;
-border-radius:5px;
-border: none;
-position: relative;
-
+border: 2px solid rgb(235, 229, 229);
 }
 
 .loop-game .play-button{
     top: 210px; 
     left: 160px;
-      z-index: 4; 
+    z-index: 2; 
     
 }
+
+.dot{
+    width: 10px;
+    height: 10px;
+    border-radius:50%;
+    background-color: black;
+    position: absolute;
+}
+/* .border-top {
+    border-top : 4px solid rgb(235, 229, 229);
+}
+.border-bottom {
+    border-bottom: 4px solid rgb(235, 229, 229);
+}
+.border-left {
+    border-left: 4px solid rgb(235, 229, 229);
+}
+.border-right {
+    border-right: 4px solid rgb(235, 229, 229);
+} */
+/* Dots arrangement */
+
+/* Row-1 */
+.dot-11 { top: 16px; left:16px;}
+.dot-12 { top: 16px; left:65px;}
+.dot-13 { top: 16px; left:115px;}
+.dot-14 { top: 16px; left:165px;}
+.dot-15 { top: 16px; left:215px;}
+.dot-16 { top: 16px; left:265px;}
+.dot-17 { top: 16px; left:315px;}
+.dot-18 { top: 16px; left:365px;}
+.dot-19 { top: 16px; left:415px;}
+.dot-10 { top: 16px; left:465px;}
+
+/* Row-2 */
+.dot-21 { top: 66px; left:16px;}
+.dot-22 { top: 66px; left:65px;}
+.dot-23 { top: 66px; left:115px;}
+.dot-24 { top: 66px; left:165px;}
+.dot-25 { top: 66px; left:215px;}
+.dot-26 { top: 66px; left:265px;}
+.dot-27 { top: 66px; left:315px;}
+.dot-28 { top: 66px; left:365px;}
+.dot-29 { top: 66px; left:415px;}
+.dot-20 { top: 66px; left:465px;}
+
+/* Row-3 */
+.dot-31 { top: 116px; left:16px;}
+.dot-32 { top: 116px; left:65px;}
+.dot-33 { top: 116px; left:115px;}
+.dot-34 { top: 116px; left:165px;}
+.dot-35 { top: 116px; left:215px;}
+.dot-36 { top: 116px; left:265px;}
+.dot-37 { top: 116px; left:315px;}
+.dot-38 { top: 116px; left:365px;}
+.dot-39 { top: 116px; left:415px;}
+.dot-30 { top: 116px; left:465px;}
+
+/* Row-4 */
+.dot-41 { top: 166px; left:16px;}
+.dot-42 { top: 166px; left:65px;}
+.dot-43 { top: 166px; left:115px;}
+.dot-44 { top: 166px; left:165px;}
+.dot-45 { top: 166px; left:215px;}
+.dot-46 { top: 166px; left:265px;}
+.dot-47 { top: 166px; left:315px;}
+.dot-48 { top: 166px; left:365px;}
+.dot-49 { top: 166px; left:415px;}
+.dot-40 { top: 166px; left:465px;}
+
+/* Row-5 */
+.dot-51 { top: 216px; left:16px;}
+.dot-52 { top: 216px; left:65px;}
+.dot-53 { top: 216px; left:115px;}
+.dot-54 { top: 216px; left:165px;}
+.dot-55 { top: 216px; left:215px;}
+.dot-56 { top: 216px; left:265px;}
+.dot-57 { top: 216px; left:315px;}
+.dot-58 { top: 216px; left:365px;}
+.dot-59 { top: 216px; left:415px;}
+.dot-50 { top: 216px; left:465px;}
+
+/* Row-6 */
+.dot-61 { top: 266px; left:16px;}
+.dot-62 { top: 266px; left:65px;}
+.dot-63 { top: 266px; left:115px;}
+.dot-64 { top: 266px; left:165px;}
+.dot-65 { top: 266px; left:215px;}
+.dot-66 { top: 266px; left:265px;}
+.dot-67 { top: 266px; left:315px;}
+.dot-68 { top: 266px; left:365px;}
+.dot-69 { top: 266px; left:415px;}
+.dot-60 { top: 266px; left:465px;}
+
+/* Row-7 */
+.dot-71 { top: 316px; left:16px;}
+.dot-72 { top: 316px; left:65px;}
+.dot-73 { top: 316px; left:115px;}
+.dot-74 { top: 316px; left:165px;}
+.dot-75 { top: 316px; left:215px;}
+.dot-76 { top: 316px; left:265px;}
+.dot-77 { top: 316px; left:315px;}
+.dot-78 { top: 316px; left:365px;}
+.dot-79 { top: 316px; left:415px;}
+.dot-70 { top: 316px; left:465px;}
+
+/* Row-8 */
+.dot-81 { top: 366px; left:16px;}
+.dot-82 { top: 366px; left:65px;}
+.dot-83 { top: 366px; left:115px;}
+.dot-84 { top: 366px; left:165px;}
+.dot-85 { top: 366px; left:215px;}
+.dot-86 { top: 366px; left:265px;}
+.dot-87 { top: 366px; left:315px;}
+.dot-88 { top: 366px; left:365px;}
+.dot-89 { top: 366px; left:415px;}
+.dot-80 { top: 366px; left:465px;}
+
+/* Row-9 */
+.dot-91 { top: 416px; left:16px;}
+.dot-92 { top: 416px; left:65px;}
+.dot-93 { top: 416px; left:115px;}
+.dot-94 { top: 416px; left:165px;}
+.dot-95 { top: 416px; left:215px;}
+.dot-96 { top: 416px; left:265px;}
+.dot-97 { top: 416px; left:315px;}
+.dot-98 { top: 416px; left:365px;}
+.dot-99 { top: 416px; left:415px;}
+.dot-90 { top: 416px; left:465px;}
+
+/* Row-10 */
+.dot-101 { top: 466px; left:16px;}
+.dot-102 { top: 466px; left:65px;}
+.dot-103 { top: 466px; left:115px;}
+.dot-104 { top: 466px; left:165px;}
+.dot-105 { top: 466px; left:215px;}
+.dot-106 { top: 466px; left:265px;}
+.dot-107 { top: 466px; left:315px;}
+.dot-108 { top: 466px; left:365px;}
+.dot-109 { top: 466px; left:415px;}
+.dot-100 { top: 466px; left:465px;}
+
 
 /* Footer */
 
