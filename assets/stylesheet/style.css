@@ -1,0 +1,361 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Custom Styles */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+/* Clearfix */
+
+.clearfix::before, .clearfix::after {
+    content:"";
+    display:table;
+}
+.clearfix::after {
+    clear: both;
+}
+.padding {
+    padding: 20px;
+}
+
+/* General */
+
+.play-button {
+    position:absolute;
+    top: 175px;
+    left: 125px;
+    height: 50px;
+    line-height: 50px;
+    width: 150px;
+    background-color: darkmagenta;
+    color : white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.border {
+    border: 1px solid white;     
+}
+
+hr{
+    margin-bottom: 20px;
+    color: rgb(151, 141, 141);
+    border-width: 0.1px;
+}
+
+
+
+/* Header */
+header{
+    background-color: rgb(34, 5, 5);
+    height: 150px;
+    line-height: 150px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.header img {
+    width: 100px;
+    vertical-align: middle;
+}
+
+.logo{
+    float : left;
+}
+
+.navigation {
+    float: right;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: wheat;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+/* Hero Section */
+.hero, .hero-game{
+    background-color: rgb(34, 5, 5);
+    color: rgb(129, 74, 74);
+    position: fixed;
+    width: 100%;
+    top: 150px;
+    z-index : 1;
+}
+
+.hero h1, .hero-game h1 {
+     font-family: 'Pacifico', cursive;
+     font-size: 100px;
+     padding-bottom : 50px;
+     text-align : center;
+}
+.hero-game h1 {
+    font-size: 50px;
+}
+/* Main Content */
+
+.game, .game-description {
+    width: 50%;
+    height: 600px;
+    padding: 3% 7.5%;
+    float : left;
+    height : 500px;
+        
+}
+
+.game-description {
+   border: 3px solid brown;
+   border-radius: 20px;
+}
+
+.game-description h2 {
+    font-size: 50px;
+    padding:10px 0;
+    font-weight: 700;
+}
+
+.game-description p {
+    padding: 10px 0;
+    text-align: justify;
+    font-size: 30;
+    line-height: 2;
+    
+}
+
+
+/* Chess */
+.chess{
+    padding: 3% 0; 
+    padding-top: calc(2% + 350px);
+    background-color: khaki;
+    
+}
+
+.light-box, .dark-box{
+    width: 50px;
+    height: 50px;
+    padding: 0 13px;
+}
+.light-box {
+    background-color: #fff;
+    float: left;
+}
+.dark-box{
+    background-color: grey;
+    float: left;
+}
+
+.main-box{
+    width: 420px;
+    height: 420px;
+    background-color:black;
+    
+    border: 5px solid darkslategrey;
+    
+    box-shadow:0 0 0 5px black;
+    position: relative;
+    padding:5px;
+    
+
+}
+.main-box span {
+    font-size: 30px;
+}
+
+/* Sudoku */
+
+.sudoku {
+    background-color: rgb(236, 223, 102);
+    padding: 3% 0;
+}
+
+.sudoku-game {
+    float: left;
+    padding: 1% 6%; 
+    
+}
+
+.sudoku .play-button{
+    top: 210px;
+    left:160px;
+}
+.main-box-sudoku {
+    width: 470px;
+    padding: 10px;
+    position: relative;
+    
+}
+.col-1-9 {
+    width:50px;
+    height: 50px;
+    border: 1px solid black;
+    float: left;
+    background-color: lightcyan;
+}
+.col-3{
+    border-right: 3px solid black;
+}
+
+.col-1{
+    border-left: 3px solid black;
+}
+.sudoku-row-1 .col-1-9{
+    border-top: 3px solid black;
+}
+
+.sudoku-row-3 .col-1-9, .sudoku-row-6 .col-1-9, .sudoku-row-9 .col-1-9 {
+    border-bottom: 3px solid black;
+}
+/* Loop */
+.loop {
+    background-color: khaki;
+    padding: 3% 0;
+    position: relative;
+     /* z-index:-2;  */
+    
+}
+
+.loop-game {
+    padding: 1% 6%; 
+ 
+}
+
+.main-box-loop {
+    width: 470px;
+    padding: 10px;
+    position: relative;
+
+}
+
+.loop-dots {
+    background-color : black;
+    height: 430px;
+    width: 430px;
+    position: absolute;
+    top:20px;
+    left: 20px;
+    box-shadow: 0 0 0 11px grey;
+    
+}
+
+.loop-game .col-1-9 {
+
+background-color: blanchedalmond;
+width: 50px;
+height: 50px;
+border-radius:5px;
+border: none;
+position: relative;
+
+}
+
+.loop-game .play-button{
+    top: 210px; 
+    left: 160px;
+      z-index: 4; 
+    
+}
+
+/* Footer */
+
+footer {
+    background-color: rgb(34, 5, 5);
+    color: wheat; 
+    height: 70px;
+    line-height: 30 px;   
+
+}
+
+.copyright {
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+/* Top Button */
+
+.top-btn{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 20%;
+    color: wheat;
+    font-weight: 700;
+    background-color: orangered;
+    position: fixed;
+    bottom:10px;
+    right:50px;
+}
+/* Games pages */
+.chess-page, .sudoku-page, .loop-page {
+    margin-top: 300px;
+}
+
+/* Other Pages */
+
+.about, .contact, .games {
+    margin-top: 350px;
+}
